@@ -14,9 +14,11 @@
 //    limitations under the License.
 using System;
 
-namespace Brainfuck.Interpret {
+namespace Brainfuck.Interpret.Basm {
     public class Instruction {
-        public Instruction () {
-        }
+        public Token  Token;
+        public int    Offset;
+        public OpCode OpCode;
+        public object Operand;
     }
 }

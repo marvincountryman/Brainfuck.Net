@@ -13,9 +13,11 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 using System;
+
 namespace Brainfuck.Interpret {
-    public class Position {
-        public Position () {
-        }
+    public struct Position {
+        public int Line;
+        public int Column;
+        public int Offset;
     }
 }

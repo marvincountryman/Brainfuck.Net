@@ -34,6 +34,20 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script.cs" />
+    <Compile Include="Interpret\Parser.cs" />
+    <Compile Include="Interpret\Lexer.cs" />
+    <Compile Include="Interpret\Token.cs" />
+    <Compile Include="Interpret\Position.cs" />
+    <Compile Include="Interpret\Compiler.cs" />
+    <Compile Include="Interpret\Basm\Instruction.cs" />
+    <Compile Include="Interpret\Basm\OpCode.cs" />
+    <Compile Include="Interpret\Exceptions.cs" />
+    <Compile Include="Mono.Options.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interpret\" />
+    <Folder Include="Interpret\Basm\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

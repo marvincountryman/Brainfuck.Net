@@ -13,9 +13,11 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 using System;
+
 namespace Brainfuck.Interpret {
-    public class Exceptions {
-        public Exceptions () {
-        }
+    public class LexException : Exception { }
+
+    public class ParseException : Exception {
+        public ParseException (string message) : base (message) { }
     }
 }

@@ -13,9 +13,26 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 using System;
+
+using Brainfuck;
+using Brainfuck.Interpret;
+
 namespace Brainfuck {
     public class Script {
+        public string Code = String.Empty;
+        public string Identifier = "brainfuck";
+
+        public int StackSize = 3000;
+
+        public int Vm;
+        public Lexer Lexer;
+        public Parser Parser;
+        public Compiler Compiler;
+
         public Script () {
+            Lexer = new Lexer (this);
+            Parser = new Parser (this);
+            Compiler = new Compiler (this);
         }
     }
 }

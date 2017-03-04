@@ -13,7 +13,18 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 using System;
+
 namespace Brainfuck.Interpret.Basm {
     public enum OpCode {
+        IncrementPointer,
+        DecrementPointer,
+        IncrementData,
+        DecrementData,
+
+        Put,
+        Get,
+
+        Brfalse,
+        Brtrue,
     }
 }
